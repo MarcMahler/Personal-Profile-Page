@@ -6,6 +6,7 @@ export default function Projects() {
     return (
         <div className="projects-page">
             <h1 className="projects-title">Projects</h1>
+            <p className="projects-notice">Note: Backend servers for some projects may take up to one minute to start after the first request, as they are hosted on free-tier services.</p>
             
             <div className="projects-grid">
                 <Link href="https://snakewithfriends.vercel.app/" target="_blank" className="project-card clickable">

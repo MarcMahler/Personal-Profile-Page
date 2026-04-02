@@ -25,6 +25,16 @@
   margin-bottom: 3rem;
 }
 
+.projects-notice {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 600px;
+  opacity: 0.8;
+  font-style: italic;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
