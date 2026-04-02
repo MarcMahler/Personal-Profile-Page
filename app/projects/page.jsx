@@ -19,7 +19,7 @@ export default function Projects() {
                     </div>
                     <div className="project-content">
                         <h3 className="project-title">Snake with Friends</h3>
-                        <p className="project-desc">During an university course about Web Development I created Snake with Friends with 4 other students as a semester project</p>
+                        <p className="project-desc">As part of a semester project in a university software engineering course, I co-developed the multiplayer game Snake with Friends with four other students</p>
                     </div>
                 </Link>
 
