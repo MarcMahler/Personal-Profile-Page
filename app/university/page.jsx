@@ -121,15 +121,6 @@ export default function UniversityResults() {
                 borderColor: "rgba(30, 58, 138, 0.8)",
                 borderWidth: 3,
                 borderDash: [6, 6],
-                label: {
-                  display: true,
-                  content: `Average: ${average.toFixed(2)}`,
-                  position: "end",
-                  backgroundColor: "rgba(30, 58, 138, 0.9)",
-                  font: { size: 12, weight: "bold" },
-                  padding: 6,
-                  borderRadius: 4,
-                },
               },
             },
           },
@@ -179,12 +170,28 @@ export default function UniversityResults() {
 
       <div className="stats-grid">
         <div className="stat-card average-card">
-          <span className="stat-label">Semester Average</span>
-          <span className="stat-value">{average.toFixed(2)}</span>
+          <div className="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <div className="stat-content">
+            <span className="stat-label">{isAllSemesters ? "Overall Average" : "Semester Average"}</span>
+            <span className="stat-value">{average.toFixed(2)}</span>
+          </div>
         </div>
         <div className="stat-card">
-          <span className="stat-label">{isAllSemesters ? "Semesters" : "Courses"}</span>
-          <span className="stat-value">{grades.length}</span>
+          <div className="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+          </div>
+          <div className="stat-content">
+            <span className="stat-label">{isAllSemesters ? "Semesters" : "Courses"}</span>
+            <span className="stat-value">{grades.length}</span>
+          </div>
         </div>
       </div>
 
