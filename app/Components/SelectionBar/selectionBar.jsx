@@ -7,13 +7,7 @@ export default function SelectionBar({ options, selected, setSelected }) {
         <button
           key={option}
           onClick={() => setSelected(option)}
-          style={{
-            padding: "10px 20px",
-            borderRadius: "5px",
-            border: selected === option ? "2px solid blue" : "1px solid gray",
-            backgroundColor: selected === option ? "lightblue" : "white",
-            cursor: "pointer",
-          }}
+          className={selected === option ? "bar-btn active" : "bar-btn"}
         >
           {option}
         </button>

@@ -1,4 +1,32 @@
 .bar {
-    margin-top: 160px;
-    height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.bar-btn {
+  padding: 8px 24px;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  background-color: #ffffff;
+  color: var(--text-muted);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.bar-btn:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+  color: var(--primary);
+}
+
+.bar-btn.active {
+  background: var(--gradient);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.3);
 }

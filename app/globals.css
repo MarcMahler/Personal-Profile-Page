@@ -1,0 +1,46 @@
+:root {
+  --primary: #1e3a8a; /* Navy Blue (Blue-900) */
+  --secondary: #3b82f6; /* Modern Blue (Blue-500) */
+  --accent: #60a5fa; /* Light Blue (Blue-400) */
+  --background: #f8fafc;
+  --foreground: #0f172a; /* Slate-900 */
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-soft: linear-gradient(135deg, rgba(30, 58, 138, 0.05), rgba(59, 130, 246, 0.05));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.5;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(96, 165, 250, 0.05) 0px, transparent 50%);
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px; /* Offset for fixed navbar */
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
