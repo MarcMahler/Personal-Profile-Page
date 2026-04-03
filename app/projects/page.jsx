@@ -24,6 +24,21 @@ export default function Projects() {
                     </div>
                 </Link>
 
+                <Link href="https://volley-planner.vercel.app/" target="_blank" className="project-card clickable">
+                    <div className="project-img-container" style={{ position: 'relative', height: '200px', width: '100%', marginBottom: '1.5rem', overflow: 'hidden', borderRadius: '16px' }}>
+                        <Image 
+                            src="/volleyPlanner.png" 
+                            alt="Gameday Planner" 
+                            fill
+                            style={{ objectFit: 'cover' }}
+                        />
+                    </div>
+                    <div className="project-content">
+                        <h3 className="project-title">Gameday Planner</h3>
+                        <p className="project-desc">A web-based gameday planner that simplifies match scheduling for my volleyball club, allowing opponents to book available game days quickly and efficiently.</p>
+                    </div>
+                </Link>
+
                 <div className="project-card placeholder">
                     <div className="project-placeholder-img"></div>
                     <div className="project-content">
