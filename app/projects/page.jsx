@@ -39,6 +39,21 @@ export default function Projects() {
                     </div>
                 </Link>
 
+                <Link href="https://rock-paper-scissors-ashen-seven.vercel.app/" target="_blank" className="project-card clickable">
+                    <div className="project-img-container" style={{ position: 'relative', height: '200px', width: '100%', marginBottom: '1.5rem', overflow: 'hidden', borderRadius: '16px' }}>
+                        <Image
+                            src="/RockPaperScissors.png"
+                            alt="Rock Paper Scissors"
+                            fill
+                            style={{ objectFit: 'cover' }}
+                        />
+                    </div>
+                    <div className="project-content">
+                        <h3 className="project-title">Rock Paper Scissors</h3>
+                        <p className="project-desc">personal project to practise React.js (AI only used for CSS styling, but all JS and HTML is programmed by hand).</p>
+                    </div>
+                </Link>
+
                 <div className="project-card placeholder">
                     <div className="project-placeholder-img"></div>
                     <div className="project-content">
